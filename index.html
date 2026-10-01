@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Datang </title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color: #ffffff;
+      text-align: center;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a, #7c3aed);
+    }
+
+    .hero {
+      max-width: 640px;
+    }
+
+    .wave {
+      display: inline-block;
+      margin-bottom: 16px;
+      font-size: 64px;
+      animation: wave 2s ease-in-out infinite;
+      transform-origin: 70% 70%;
+    }
+
+    @keyframes wave {
+      0%, 60%, 100% { transform: rotate(0deg); }
+      10%, 30% { transform: rotate(14deg); }
+      20%, 40% { transform: rotate(-8deg); }
+      50% { transform: rotate(10deg); }
+    }
+
+    .small {
+      font-size: 14px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #c4b5fd;
+    }
+
+    h1 {
+      margin: 12px 0 16px;
+      font-size: 52px;
+      line-height: 1.15;
+    }
+
+    .name {
+      background: linear-gradient(90deg, #fbbf24, #f472b6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    p {
+      margin-bottom: 32px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #e5e7eb;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 999px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      text-decoration: none;
+      background: linear-gradient(90deg, #2563eb, #db2777);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+      transition: transform 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    footer {
+      margin-top: 48px;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="hero">
+    <div class="wave">&#128075;</div>
+    <div class="small">Halo, selamat datang</div>
+    <h1>Di Website Pribadi <span class="name">Gabriel Nicholas</span></h1>
+    <p>
+      Ini adalah ruang kecil saya di internet. Senang kamu mampir,
+      silakan lihat-lihat dan nikmati kunjunganmu.
+    </p>
+    <a class="btn" href="https://github.com/gabriel-nicholas">Lihat GitHub Saya</a>
+    <footer>Dirilis otomatis dengan GitHub Actions &amp; GitHub Pages</footer>
+  </main>
+
+</body>
+</html>
